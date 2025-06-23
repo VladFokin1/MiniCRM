@@ -22,9 +22,9 @@ public class Main {
         commands.put(2, context.getBean(RemoveClientCommand.class));
         commands.put(3, context.getBean(EditProfileCommand.class));
         commands.put(4, context.getBean(AddOrderCommand.class));
-//        commands.put(5, context.getBean(EditCouponsCommand.class));
+        commands.put(5, context.getBean(EditCouponsCommand.class));
 //        commands.put(6, context.getBean(FindOrdersCommand.class));
-//        commands.put(7, context.getBean(ExitCommand.class));
+        commands.put(7, context.getBean(ExitCommand.class));
 
         while (true) {
             printMenu(commands);

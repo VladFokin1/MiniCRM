@@ -2,10 +2,11 @@ package org.example.service;
 
 import org.example.entity.Coupon;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Component
+@Service
 public class CouponService {
     private final TransactionHelper transactionHelper;
 

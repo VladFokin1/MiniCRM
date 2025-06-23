@@ -25,7 +25,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
-      <object connection-id="2e6b1c4d-aea8-40ed-a91c-27b7a5ce19d7" object-ref="schemas/public/tables/coupon" />
+      <object connection-id="2e6b1c4d-aea8-40ed-a91c-27b7a5ce19d7" object-ref="schemas/public/tables/coupons" />
     </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
@@ -37,6 +37,7 @@
         <condition column="id" operator="=" value="" active="true" />
       </filter>
     </filter-actions>
+    <filter-actions connection-id="2e6b1c4d-aea8-40ed-a91c-27b7a5ce19d7" dataset="public.coupons" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="2e6b1c4d-aea8-40ed-a91c-27b7a5ce19d7" dataset="public.profile" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="2e6b1c4d-aea8-40ed-a91c-27b7a5ce19d7" dataset="public.coupon" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="2e6b1c4d-aea8-40ed-a91c-27b7a5ce19d7" dataset="public.students" active-filter-id="EMPTY_FILTER">
