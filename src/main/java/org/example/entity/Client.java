@@ -31,7 +31,7 @@ public class Client {
 
     @ManyToMany
     @JoinTable(
-            name = "client_coupons",
+            name = "client_coupon",
             joinColumns = @JoinColumn(name = "client_id", referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "coupon_id", referencedColumnName = "id")
     )

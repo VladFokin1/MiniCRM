@@ -22,7 +22,9 @@ public class CouponService {
 
     public Coupon getByCode(String code) {
         return transactionHelper.executeInTransaction(session -> {
-            return session.createQuery("SELECT c FROM Coupon WHERE c.code = %s".formatted(code), Coupon.class).getSingleResult();
+            return session.createQuery("SELECT c FROM Coupon c WHERE c.code = :code", Coupon.class)
+                    .setParameter("code", code)
+                    .getSingleResult();
         });
     }
 }

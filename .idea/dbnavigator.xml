@@ -24,9 +24,7 @@
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="2e6b1c4d-aea8-40ed-a91c-27b7a5ce19d7" object-ref="schemas/public/tables/coupons" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="2e6b1c4d-aea8-40ed-a91c-27b7a5ce19d7" />
@@ -39,12 +37,14 @@
     </filter-actions>
     <filter-actions connection-id="2e6b1c4d-aea8-40ed-a91c-27b7a5ce19d7" dataset="public.coupons" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="2e6b1c4d-aea8-40ed-a91c-27b7a5ce19d7" dataset="public.profile" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="2e6b1c4d-aea8-40ed-a91c-27b7a5ce19d7" dataset="public.orders" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="2e6b1c4d-aea8-40ed-a91c-27b7a5ce19d7" dataset="public.coupon" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="2e6b1c4d-aea8-40ed-a91c-27b7a5ce19d7" dataset="public.students" active-filter-id="EMPTY_FILTER">
       <filter id="18419168-ed1f-402f-ab79-028bf4ac8c03" name="1" temporary="false" custom-name="false" type="basic" join-type="OR">
         <condition column="id" operator="=" value="1" active="true" />
       </filter>
     </filter-actions>
+    <filter-actions connection-id="2e6b1c4d-aea8-40ed-a91c-27b7a5ce19d7" dataset="public.clients" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />

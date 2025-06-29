@@ -12,6 +12,7 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Scanner;
 
 @Component
@@ -60,9 +61,10 @@ public class AddClientCommand implements ICommand{
         while (!couponCode.equals("0")) {
             System.out.println("Введите код купона для добавления (для выхода введите 0):");
             couponCode = scanner.nextLine();
+            if (couponCode.equals("0")) break;
             String finalCouponCode = couponCode;
             Coupon coupon = couponList.stream()
-                    .filter(element -> element.getCode() == finalCouponCode)
+                    .filter(element -> Objects.equals(element.getCode(), finalCouponCode))
                     .findFirst()
                     .get();
             client.getCouponList().add(coupon);

@@ -31,7 +31,7 @@ public class ClientService {
 
     public List<Client> getAllClients() {
         return transactionHelper.executeInTransaction(session -> {
-            return session.createQuery("SELECT c FROM Client c", Client.class).list();
+            return session.createQuery("SELECT c FROM Client c left join fetch c.orderList", Client.class).list();
         });
     }
 }
